@@ -137,6 +137,8 @@ picture img
 
 .is-active
 {
+   border-bottom: 1px solid #e7e7e9;
+   padding-bottom: 18px;
    visibility: visible;
    animation: ocultar .7s ease-in-out forwards;
 } 
@@ -166,13 +168,13 @@ picture img
    {
       opacity: 1;
       visibility: visible;
-      height: 50px;
+      height: 60px;
    }
 }
 
 .is-not-active 
 {
-   animation: hidden 1s ease-in-out forwards;
+   animation: hidden 1.5s ease-in-out forwards;
 }
 
 @keyframes hidden
@@ -181,10 +183,10 @@ picture img
    {
       opacity: 1;
       visibility: visible;
-      height: 50px;
+      height: 60px;
    }
 
-   50%
+   40%
    {
       opacity: 0;
       visibility: hidden;
@@ -197,4 +199,10 @@ picture img
       visibility: hidden;
       height: 0px;
    }
+}
+
+.question-answer
+{
+   font-weight: 700;
+   border-bottom: none;
 }

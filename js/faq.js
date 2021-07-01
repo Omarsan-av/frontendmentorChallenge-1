@@ -8,30 +8,38 @@ for(let i = 0; i< question.length; i++)
    {
       if(contador > 0 && position != i)
       {
-         answer[position].classList.remove('is-active');
-         answer[position].classList.add('is-not-active');
+         hideShow(i, position);
+         showHide(i);
          position = i;
-
-         answer[i].classList.remove('is-not-active');
-         answer[i].classList.add('is-active');
       }
 
       else 
       {
          if(answer[i].classList.contains('is-active'))
          {
-            answer[i].classList.remove('is-active');
-            answer[i].classList.add('is-not-active');
-
+            hideShow(i, position);            
             contador = 0
          }
          else 
          {
-            answer[i].classList.remove('is-not-active');
-            answer[i].classList.add('is-active');
+            showHide(i);
             contador ++;
             position = i;
          }
       }
    });
+}
+
+function hideShow (a, b)
+{
+   question[a].classList.remove('question-answer');
+   answer[b].classList.remove('is-active');
+   answer[b].classList.add('is-not-active');
+}
+
+function showHide (a)
+{
+   question[a].classList.add('question-answer');
+   answer[a].classList.add('is-active');
+   answer[a].classList.remove('is-not-active');
 }
