@@ -1,0 +1,54 @@
+.container 
+{
+   display: flex;
+   align-items: center;
+   height: 70%;
+   width: 70%;
+   margin: auto;
+}
+
+.images 
+{
+   width: 60%;
+   margin-top: 0;
+}
+
+.faq
+{
+   position: relative;
+   width: 40%;
+   left: -9%;
+}
+
+.shadow 
+{
+   top: 3%;
+   left: -9%;
+}
+
+picture img 
+{
+   margin-left: 0;
+}
+
+.box 
+{
+   display: block;
+   position: absolute;
+   width: 16%;
+   top: 43%;
+   left: 8.5%;
+   z-index: 1; 
+}
+
+.image-main 
+{
+   position: relative;
+   overflow: hidden;
+}
+
+.image-main img 
+{
+   position: relative;
+   left: -15.5%;
+}
