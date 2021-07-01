@@ -33,6 +33,7 @@ for(let i = 0; i< question.length; i++)
 function hideShow (a, b)
 {
    question[a].classList.remove('question-answer');
+   question[a].querySelector('span').style.transform = 'rotate(0deg)';
    answer[b].classList.remove('is-active');
    answer[b].classList.add('is-not-active');
 }
@@ -40,6 +41,7 @@ function hideShow (a, b)
 function showHide (a)
 {
    question[a].classList.add('question-answer');
+   question[a].querySelector('span').style.transform = 'rotate(180deg)';
    answer[a].classList.add('is-active');
    answer[a].classList.remove('is-not-active');
 }
